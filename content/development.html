@@ -3,7 +3,7 @@
         ## MapServer 8.0 Release
 
         - Major development proposed as a [Request for Comment](https://mapserver.org/development/rfc/index.html) (RFC)
-        - Release candidate October 2021
+        - Release planned for October 2021
     </script>
 </section>
 
@@ -73,7 +73,7 @@ CONFIG
     MS_DEBUGLEVEL "5"
 
     # Proj Library
-    PROJ_LIB ""
+    PROJ_LIB "/share/proj/"
     #
     OGCAPI_HTML_TEMPLATE_DIRECTORY "/usr/local/mapserver/share/ogcapi/templates/html-bootstrap4/"
   END
@@ -81,7 +81,7 @@ CONFIG
   # Map aliases
   MAPS
     MAPFILE1 "/opt/mapserver/test/test1.map"
-    MAPFILE2 "/opt/mapserver/test/test2.map"
+    ITASCA "/opt/mapserver/test/itasca.map"
   END
   PLUGINS
     "mssql" "/usr/plugins/msplugin_mssql2008.dll"
